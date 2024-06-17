@@ -1,13 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Constants from 'expo-constants';
 import Main from './src/components/Main';
+import { NativeRouter } from 'react-router-native';
 
 export default function App() {
   return (
-    <View style={{margin: Constants.statusBarHeight, flexGrow: 1}}>
+    <NativeRouter>
       <Main />
-    </View>
+    </NativeRouter>
   );
 }
 
